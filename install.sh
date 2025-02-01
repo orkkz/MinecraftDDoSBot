@@ -1,5 +1,6 @@
 sudo su
 apt update
-apt install python3.10
+apt install python3
 apt install openjdk-21-jdk
-pip install discord python-dotenv
+pip install discord python-dotenv requests
+python3 app.py
