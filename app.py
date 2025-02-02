@@ -336,7 +336,7 @@ async def on_message(message):
             inline=False
         )
         embed.add_field(
-            name="!chat <IP:PORT> <username>",
+            name="!chat <IP:PORT> <username> <version>",
             value="Create a persistent chat session with the specified Minecraft server. Type `!exit` to stop the chat and delete the channel.",
             inline=False
         )
@@ -586,7 +586,7 @@ async def on_message(message):
         if len(args) != 4:
             embed = discord.Embed(
                 title="Invalid Command",
-                description="Usage: `!chat <IP:PORT> <bot_username>`",
+                description="Usage: `!chat <IP:PORT> <bot_username> <version>`",
                 color=discord.Color.red()
             )
             await message.channel.send(embed=embed)
@@ -607,6 +607,7 @@ async def on_message(message):
                 return
             ip = args[1]
             nm = nmap.PortScanner()
+            open_ports = []
             try:
                 nm.scan(ip)
 
