@@ -17,12 +17,12 @@ client = discord.Client(intents=intents)
 user_attack_data = {}
 
 # Max attacks per user and max time per attack
-MAX_ATTACKS = 9999999
-MAX_ATTACK_TIME = 9999 * 60  
+MAX_ATTACKS = 9999999 # Change me 
+MAX_ATTACK_TIME = 9999 * 60 # Change me
 
 # Allowed Guild ID and Channel ID
-ALLOWED_GUILD_ID = 1330148451530309692
-ALLOWED_CHANNEL_ID = 1335304101319151667
+ALLOWED_GUILD_ID = 1330148451530309692 # Change me
+ALLOWED_CHANNEL_ID = 1335304101319151667 # Change me
 
 # Server invite link
 server_invite = 'https://discord.gg/vg6kdGVv'
