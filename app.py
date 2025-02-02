@@ -17,8 +17,8 @@ client = discord.Client(intents=intents)
 user_attack_data = {}
 
 # Max attacks per user and max time per attack
-MAX_ATTACKS = 2
-MAX_ATTACK_TIME = 5 * 60  # 5 minutes
+MAX_ATTACKS = 9999999
+MAX_ATTACK_TIME = 9999 * 60  
 
 # Allowed Guild ID and Channel ID
 ALLOWED_GUILD_ID = 1330148451530309692
