@@ -33,7 +33,7 @@ MAX_ATTACKS = 9999999 # Change me
 MAX_ATTACK_TIME = 9999 * 60 # Change me
 
 # Allowed Guild ID and Channel ID
-ALLOWED_GUILD_ID = 1330148451530309692 # Change me
+#ALLOWED_GUILD_ID = 1330148451530309692 # Change me
 
 # Server invite link
 server_invite = 'https://discord.gg/vg6kdGVv'
@@ -294,9 +294,6 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author == client.user:
-        return
-    if message.guild is None or message.guild.id != ALLOWED_GUILD_ID:
-        await message.channel.send(f"Please join the server using this link: {server_invite}")
         return
     if message.content.startswith('!help'):
         embed = discord.Embed(
